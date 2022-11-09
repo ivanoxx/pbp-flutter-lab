@@ -6,25 +6,25 @@
 
 ## *Widget* yang Digunakan
 1. `Text`
-Menampilkan sebuah *string* dengan *single style*.
+: Menampilkan sebuah *string* dengan *single style*.
 2. `Icon`
-Menampilkan sebuah ikon.
+: Menampilkan sebuah ikon.
 3. `Column`
-Sebuah *widget* yang menampilkan *children*-nya secara vertikal.
+: Sebuah *widget* yang menampilkan *children*-nya secara vertikal.
 4. `Row`
-Sebuah *widget* yang menampilkan *children*-nya secara horizontal.
+: Sebuah *widget* yang menampilkan *children*-nya secara horizontal.
 5. `Scaffold`
-Menerapkan dasar dari *visual layout* Material Design.
+: Menerapkan dasar dari *visual layout* Material Design.
 6. `AppBar`
-*App bar* dari Material Design
+: *App bar* dari Material Design
 7. `Padding`
-Memberi *padding* pada *child* yang diletakkan di dalamnya.
+: Memberi *padding* pada *child* yang diletakkan di dalamnya.
 8. `FloatingActionButton`
-Membuat tombol yang dapat melakukan sebuah *action*
+: Membuat tombol yang dapat melakukan sebuah *action*
 9. `Center`
-Sebuah *widget* yang *child*-nya akan berposisi di tengah.
+: Sebuah *widget* yang *child*-nya akan berposisi di tengah.
 10. `Visibility`
-Menampilkan *child*-nya tergantung dengan nilai *field* `visible`.
+: Menampilkan *child*-nya tergantung dengan nilai *field* `visible`.
 
 ## `setState`
 Method ini digunakan bila ingin ada perubahan yang terjadi pada tampilan app secara langsung. `setState` akan menginfokan *framework* Flutter bahwa ada sesuatu yang berubah, yang mengakibatkan *method* `build` di-*rerun* sehingga menampilkan perubahan yang terjadi. Pada kasus ini, yang berubah adalah nilai dari variabel `_counter`. Namun yang berubah di tampilan tidak hanya nilai angka saja, karena `_counter` juga mempengaruhi teks yang ditampilkan. Ketika *method* `build` di-*rerun* dan nilai `_counter` sudah berubah, maka teks yang ditampilkan akan sesuai dengan kondisi *ternary* yang diberikan.
