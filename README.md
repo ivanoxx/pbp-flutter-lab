@@ -10,25 +10,25 @@
 *Stateless widget* adalah kebalikan dari *stateful widget*. Ketika sudah dibuat, *state* dari *widget* ini tidak dapat diubah.
 
 ### 2. *Widget* yang Digunakan
-1. `Text`
+* `Text`
 : Menampilkan sebuah *string* dengan *single style*.
-2. `Icon`
+* `Icon`
 : Menampilkan sebuah ikon.
-3. `Column`
+* `Column`
 : Sebuah *widget* yang menampilkan *children*-nya secara vertikal.
-4. `Row`
+* `Row`
 : Sebuah *widget* yang menampilkan *children*-nya secara horizontal.
-5. `Scaffold`
+* `Scaffold`
 : Menerapkan dasar dari *visual layout* Material Design.
-6. `AppBar`
+* `AppBar`
 : *App bar* dari Material Design
-7. `Padding`
+* `Padding`
 : Memberi *padding* pada *child* yang diletakkan di dalamnya.
-8. `FloatingActionButton`
+* `FloatingActionButton`
 : Membuat tombol yang dapat melakukan sebuah *action*
-9. `Center`
+* `Center`
 : Sebuah *widget* yang *child*-nya akan berposisi di tengah.
-10. `Visibility`
+* `Visibility`
 : Menampilkan *child*-nya tergantung dengan nilai *field* `visible`.
 
 ### 3. `setState`
@@ -39,10 +39,10 @@ Method ini digunakan bila ingin ada perubahan yang terjadi pada tampilan app sec
 * Variabel `const` sebenarnya memiliki sifat yang sama dengan `final`, hanya saja `const` juga menjadikan sebuah variabel menjadi konstan ketika program di-*compile*
 
 ### 5. Implementasi
-1. Menambahkan fungsi `_decrementCounter` yang akan mengurangi nilai vairabel `_counter`.
-2. Menambahkan tombol yang sama dengan tombol untuk menambah *counter*, hanya saja, fungsi yang dipanggil ketika tombol ditekan adalah `_decrementCounter`. Karena tombol ini digunakan untuk mengurangi *counter*.
-3. Menambahkan *padding* agar tombol *increment* dan *decrement counter* berada di posisi sesuai dengan yang diinginkan.
-4. Menambahkan *ternary expression* terhadap teks yang ditampilkan. Teks akan berubah menjadi `Genap` atau `Ganjil` relatif terhadap nilai *counter* setelah salah satu tombol ditekan. 
+* Menambahkan fungsi `_decrementCounter` yang akan mengurangi nilai vairabel `_counter`.
+* Menambahkan tombol yang sama dengan tombol untuk menambah *counter*, hanya saja, fungsi yang dipanggil ketika tombol ditekan adalah `_decrementCounter`. Karena tombol ini digunakan untuk mengurangi *counter*.
+* Menambahkan *padding* agar tombol *increment* dan *decrement counter* berada di posisi sesuai dengan yang diinginkan.
+* Menambahkan *ternary expression* terhadap teks yang ditampilkan. Teks akan berubah menjadi `Genap` atau `Ganjil` relatif terhadap nilai *counter* setelah salah satu tombol ditekan. 
 
 ### 6. Bonus
 Menggunakan `Visibility` pada tombol *decrement* dengan nilai `visible` adalah `_counter != 0`. Sehingga, ketika `_counter == 0`, `visible` akan bernilai *false* dan tombol tidak akan disembunyikan. Sebaliknya, ketika `_counter != 0`, `visible` akan bernilai *true* sehingga tombol akan ditampilkan.
@@ -53,66 +53,66 @@ Menggunakan `Visibility` pada tombol *decrement* dengan nilai `visible` adalah `
 `Navigator.push` menambahkan `Route` ke *top of stack* dari `Navigator`. Kalau `Navigator.pushReplacement`, selain menambahkannya ke *top of stack* juga menghilangkan `Route` yang sebelumnya.
 
 ### 2. *Widget* yang Digunakan
-1. `Text`
+* `Text`
 : Menampilkan sebuah *string* dengan *single style*.
-2. `Column`
+* `Column`
 : Sebuah *widget* yang menampilkan *children*-nya secara vertikal.
-3. `Row`
+* `Row`
 : Sebuah *widget* yang menampilkan *children*-nya secara horizontal.
-4. `Scaffold`
+* `Scaffold`
 : Menerapkan dasar dari *visual layout* Material Design.
-5. `AppBar`
+* `AppBar`
 : *App bar* dari Material Design
-6. `Padding`
+* `Padding`
 : Memberi *padding* pada *child* yang diletakkan di dalamnya.
-7. `Center`
+* `Center`
 : Sebuah *widget* yang *child*-nya akan berposisi di tengah.
-8. `Drawer`
+* `Drawer`
 : Panel yang berdiri secara horizontal di pinggir `Scaffold` yang menampilkan tautan navigasi dalam aplikasi.
-9.  `ListTile`
+*  `ListTile`
 : Sebuah baris yang biasanya mengandung teks dan ikon.
-10. `Navigator`
+* `Navigator`
 : Mengelola *child widgets* menggunakan prinsip *stack*.
-11. `MaterialPageRoute`
+* `MaterialPageRoute`
 : Rute modal yang menggantikan seluruh layar dengan transisi platform-adaptif.
-12. `SingleChildScrollView`
+* `SingleChildScrollView`
 : Digunakan agar *child*-nya bisa di-*scroll*.
-13. `Container`
+* `Container`
 : *Widget* yang menggabungkan *widget* umum untuk *painting*, *positioning*, dan *sizing*.
-14. `Card`
+* `Card`
 : Sebuah panel yang bisa digunakan untuk menampilkan informasi di dalamnya. Memiliki *style* dimana sudutnya sedikit bulat dan terdapat bayangan elevasi.
-15. `CustomScrollView`
+* `CustomScrollView`
 : Kurang lebih sama dengan `SingleChildScrollView` namun lebih fleksibel.
-16. `SliverFillRemainingFill`
+* `SliverFillRemainingFill`
 : Sebuah *sliver* yang mengandung sebuah *box child* yang mengisi sisa ruang pada *viewport*.
-17. `Form`
+* `Form`
 : *Containter* untuk melakukan *grouping* terhadap beberapa *form field widget*.
-18. `TextFormField`
+* `TextFormField`
 : *Field* teks yang bisa digunakan untuk melakukan *input*.
-19. `InputDecoration`
+* `InputDecoration`
 : Melakukan dekorasi pada sebuah *input field*.
-20. `DropdownButtonFormField`
+* `DropdownButtonFormField`
 : Menu *dropdown*.
-21. `Expanded`
+* `Expanded`
 : Melebarkan *child* dari `Row`, `Column`, atau `Flex` agar mengisi ruang yang masih tersedia.
-22. `Align`
+* `Align`
 : Melakukan *aligining* terhadap *child*-nya.
-23. `TextButton`
+* `TextButton`
 : Tombol yang berisi teks.
 
 ### 3. Jenis-jenis *event* pada FLutter
-1. `onPressed`:
+* `onPressed`:
 Fungsi pada *event* ini akan dijalankan ketika *widget* yang bisa ditekan, ditekan. Contoh: `TextButton`.
-2. `onPressed`:
+* `onPressed`:
 Fungsi pada *event* ini akan dijalankan ketika sedang terjadi perubahan pada *widget*. Contoh: Ketika *user* sedang mengetik pada `TextFormField`.
-3. `onSaved`:
+* `onSaved`:
 Fungsi pada *event* ini akan dijalankan ketika dilakukan *save* pada sebuah `Form`.
 
 ### 4. Cara kerja `Navigator`
 `Navigator` menggunakan prinsip *stack* dalam mengganti halaman. Halaman yang ditampilkan adalah yang berada pada *top of stack*.
 
 ### 5. Implementasi
-1. Membuat *form* beserta *input field* yang dinginkan mengacu pada tutorial.
-2. Data-data yang di-input disimpan kedalam sebuah `List`.
-3. Data yang disimpan berupa `Card`.
-4. Tampilkan data pada halaman Data Budget sesuai dengan yang sudah ditambahkan dengan memanfaatkan `List` yang tadi sudah dibuat.
+* Membuat *form* beserta *input field* yang dinginkan mengacu pada tutorial.
+* Data-data yang di-input disimpan kedalam sebuah `List`.
+* Data yang disimpan berupa `Card`.
+* Tampilkan data pada halaman Data Budget sesuai dengan yang sudah ditambahkan dengan memanfaatkan `List` yang tadi sudah dibuat.
