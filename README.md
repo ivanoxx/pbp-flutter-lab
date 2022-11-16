@@ -1,5 +1,8 @@
 # **Lab Flutter PBP - Dafi Nafidz Radhiyya (2106701564)**
 
+* [Lab 7](https://github.com/ivanoxx/pbp-flutter-lab#lab-7)
+* [Lab 8](https://github.com/ivanoxx/pbp-flutter-lab#lab-8)
+
 ## **Lab 7**
 
 ### *Stateful and Stateless Widget*
@@ -44,12 +47,12 @@ Method ini digunakan bila ingin ada perubahan yang terjadi pada tampilan app sec
 ### Bonus
 Menggunakan `Visibility` pada tombol *decrement* dengan nilai `visible` adalah `_counter != 0`. Sehingga, ketika `_counter == 0`, `visible` akan bernilai *false* dan tombol tidak akan disembunyikan. Sebaliknya, ketika `_counter != 0`, `visible` akan bernilai *true* sehingga tombol akan ditampilkan.
 
-# **Lab 8**
+## **Lab 8**
 
-## Perbedaan `Navigator.push` dan `Navigator.pushReplacement`
+### Perbedaan `Navigator.push` dan `Navigator.pushReplacement`
 `Navigator.push` menambahkan `Route` ke *top of stack* dari `Navigator`. Kalau `Navigator.pushReplacement`, selain menambahkannya ke *top of stack* juga menghilangkan `Route` yang sebelumnya.
 
-## *Widget* yang Digunakan
+### *Widget* yang Digunakan
 1. `Text`
 : Menampilkan sebuah *string* dengan *single style*.
 2. `Column`
@@ -64,3 +67,52 @@ Menggunakan `Visibility` pada tombol *decrement* dengan nilai `visible` adalah `
 : Memberi *padding* pada *child* yang diletakkan di dalamnya.
 7. `Center`
 : Sebuah *widget* yang *child*-nya akan berposisi di tengah.
+8. `Drawer`
+: Panel yang berdiri secara horizontal di pinggir `Scaffold` yang menampilkan tautan navigasi dalam aplikasi.
+9.  `ListTile`
+: Sebuah baris yang biasanya mengandung teks dan ikon.
+10. `Navigator`
+: Mengelola *child widgets* menggunakan prinsip *stack*.
+11. `MaterialPageRoute`
+: Rute modal yang menggantikan seluruh layar dengan transisi platform-adaptif.
+12. `SingleChildScrollView`
+: Digunakan agar *child*-nya bisa di-*scroll*.
+13. `Container`
+: *Widget* yang menggabungkan *widget* umum untuk *painting*, *positioning*, dan *sizing*.
+14. `Card`
+: Sebuah panel yang bisa digunakan untuk menampilkan informasi di dalamnya. Memiliki *style* dimana sudutnya sedikit bulat dan terdapat bayangan elevasi.
+15. `CustomScrollView`
+: Kurang lebih sama dengan `SingleChildScrollView` namun lebih fleksibel.
+16. `SliverFillRemainingFill`
+: Sebuah *sliver* yang mengandung sebuah *box child* yang mengisi sisa ruang pada *viewport*.
+17. `Form`
+: *Containter* untuk melakukan *grouping* terhadap beberapa *form field widget*.
+18. `TextFormField`
+: *Field* teks yang bisa digunakan untuk melakukan *input*.
+19. `InputDecoration`
+: Melakukan dekorasi pada sebuah *input field*.
+20. `DropdownButtonFormField`
+: Menu *dropdown*.
+21. `Expanded`
+: Melebarkan *child* dari `Row`, `Column`, atau `Flex` agar mengisi ruang yang masih tersedia.
+22. `Align`
+: Melakukan *aligining* terhadap *child*-nya.
+23. `TextButton`
+: Tombol yang berisi teks.
+
+### Jenis-jenis *event* pada FLutter
+1. `onPressed`:
+Fungsi pada *event* ini akan dijalankan ketika *widget* yang bisa ditekan, ditekan. Contoh: `TextButton`.
+2. `onPressed`:
+Fungsi pada *event* ini akan dijalankan ketika sedang terjadi perubahan pada *widget*. Contoh: Ketika *user* sedang mengetik pada `TextFormField`.
+3. `onSaved`:
+Fungsi pada *event* ini akan dijalankan ketika dilakukan *save* pada sebuah `Form`.
+
+### Cara kerja `Navigator`
+`Navigator` menggunakan prinsip *stack* dalam mengganti halaman. Halaman yang ditampilkan adalah yang berada pada *top of stack*.
+
+### Implementasi
+1. Membuat *form* beserta *input field* yang dinginkan mengacu pada tutorial.
+2. Data-data yang di-input disimpan kedalam sebuah `List`.
+3. Data yang disimpan berupa `Card`.
+4. Tampilkan data pada halaman Data Budget sesuai dengan yang sudah ditambahkan dengan memanfaatkan `List` yang tadi sudah dibuat.

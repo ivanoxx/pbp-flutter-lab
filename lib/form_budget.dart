@@ -13,10 +13,6 @@ class AddBudgetPage extends StatefulWidget {
 class _MyFormPageState extends State<AddBudgetPage> {
   final _formKey = GlobalKey<FormState>();
 
-  final judulField = TextEditingController();
-  final nominalField = TextEditingController();
-  // final judulField = TextEditingController();
-
   String judulBudget = "";
   String nominal = "";
   String jenis = "";
@@ -110,7 +106,6 @@ class _MyFormPageState extends State<AddBudgetPage> {
                         // Menggunakan padding sebesar 8 pixels
                         padding: const EdgeInsets.all(8.0),
                         child: TextFormField(
-                          // controller: judulField,
                           decoration: InputDecoration(
                             hintText: "Contoh: Top-up ml",
                             labelText: "Judul",
@@ -144,7 +139,6 @@ class _MyFormPageState extends State<AddBudgetPage> {
                         // Menggunakan padding sebesar 8 pixels
                         padding: const EdgeInsets.all(8.0),
                         child: TextFormField(
-                          // controller: nominalField,
                           decoration: InputDecoration(
                             hintText: "Contoh: 10000",
                             labelText: "Nominal",
