@@ -1,6 +1,7 @@
+import 'package:counter_7/page/my_watchlist_page.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/data_budget.dart';
+import 'package:counter_7/page/data_budget.dart';
 import 'package:flutter/services.dart';
 
 class AddBudgetPage extends StatefulWidget {
@@ -63,7 +64,7 @@ class _MyFormPageState extends State<AddBudgetPage> {
                   context,
                   MaterialPageRoute(
                       builder: (context) =>
-                          const MyHomePage(title: 'Program Counter')),
+                          const MyHomePage()),
                 );
               },
             ),
@@ -86,6 +87,17 @@ class _MyFormPageState extends State<AddBudgetPage> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => const DataBudgetPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('My Watchlist'),
+              onTap: () {
+                // Route menu ke halaman My Watchlist
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const MyWatchlistPage()),
                 );
               },
             ),
